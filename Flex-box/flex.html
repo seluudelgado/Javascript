@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+
+    <!--Primer ejercicio flex grow-->
+
+    <h3>
+        Utiliza el flex-grow de manera que establezcas cuanto puede crecer un elemento flex en relación al resto de elementos de la misma caja flex con un ancho
+        de 100px para cada caja.
+    </h3>
+    <h1>Caja 1 sin flex</h1>
+    <div class="contenedorVacio">
+        <div id="cajaEjemplo1"></div>
+        <div id="cajaEjemplo2"></div>
+        <div id="cajaEjemplo3"></div>
+        <div id="cajaEjemplo4"></div>
+        <div id="cajaEjemplo5"></div>
+    </div>
+    <br>
+    <h1>Caja 2 con flex-grow</h1>
+    <div class="contenedor">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+        <div id="caja5"></div>
+    </div>
+
+    <!--Segundo ejercicio flex shrink-->
+
+    <h3>
+        Utiliza el flex-shrink de manera que establezcas cuanto se puede reducir un elemento flex en relación al resto de elementos de la misma caja flex con un ancho
+        de 100px para cada caja.
+    </h3>
+    <br>
+    <h1>Caja 3 con flex-shrink</h1>
+    <div class="contenedor">
+        <div id="caja6"></div>
+        <div id="caja7"></div>
+        <div id="caja8"></div>
+        <div id="caja9"></div>
+        <div id="caja10"></div>
+    </div>
+
+    <!--Tercer ejercicio cajas separadas y dispuestas horizontal y verticalmente-->
+
+    <h3>
+        Utiliza la propiedad flex de manera que las cajas se ajusten horizontalmente de izquierda a derecha además de usar el space between
+        para dejar un espacio sobrante entre caja y caja.
+    </h3>
+    <br>
+    <h1>Caja 4 con space-between</h1>
+    <div id="contenedor2">
+        <div id="caja11"></div>
+        <div id="caja12"></div>
+        <div id="caja13"></div>
+        <div id="caja14"></div>
+        <div id="caja15"></div>
+    </div>
+    <h3>
+        Utiliza la propiedad flex de manera que las cajas se ajusten verticalmente de arriba a abajo sin usar el space between
+        para dejar un espacio sobrante entre caja y caja.
+    </h3>
+    <br>
+    <h1>Caja 5 con column</h1>
+    <div id="contenedor2-1">
+        <div class="caja16"></div>
+        <div class="caja17"></div>
+        <div class="caja18"></div>
+        <div class="caja19"></div>
+        <div class="caja20"></div>
+    </div>
+
+    <!--Tercer ejercicio cajas con flex wrap y wrap reverse-->
+
+    <h3>
+        Utiliza la propiedad flex-wrap de manera que las cajas permanezan o no en la misma línea. Utiliza distintos tipos ya sea empezando
+        por el principio o por el final de la línea. Aqui usamos el wrap normal.
+    </h3>
+    <br>
+    <h1>Caja 6 con flex-wrap</h1>
+    <div id="contenedor3">
+        <div class="caja16"></div>
+        <div class="caja17"></div>
+        <div class="caja18"></div>
+        <div class="caja19"></div>
+        <div class="caja20"></div>
+    </div>
+    <h3>
+        Utiliza la propiedad flex-wrap de manera que las cajas permanezan o no en la misma línea. Utiliza distintos tipos ya sea empezando
+        por el principio o por el final de la línea. Aqui usamos el reverse.
+    </h3>
+    <br>
+    <h1>Caja 7 con flex-wrap reverse</h1>
+    <div id="contenedor3-1">
+        <div class="caja16"></div>
+        <div class="caja17"></div>
+        <div class="caja18"></div>
+        <div class="caja19"></div>
+        <div class="caja20"></div>
+    </div>
+</body>
+</html>

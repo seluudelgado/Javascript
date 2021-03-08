@@ -1,0 +1,111 @@
+html
+{
+    width:1280px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+header
+{
+    background-color: #660000;
+    height: 102px;
+}
+nav
+{
+    background-color: #99F;
+
+}
+nav ul
+{
+    padding-top: 2em;
+}
+nav ul li
+{
+    width: 191px;
+    min-width: 120px;
+    padding: 0.4em 8.5px 0.4em 8.5px;
+    border: 2px solid #F00;
+    background-color: #600;
+
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+nav ul li:last-child
+{
+    margin-right: 0px;
+}
+nav ul li a{
+    color: #ffff99;
+    text-decoration: none;
+}
+#contenedor
+{
+    background-color: #FF6;
+}
+form
+{
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
+form label
+{
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0.5em;
+}
+form input
+{
+    font-size: 0.8em;
+}
+form input[type="text"]
+{
+    padding-left: 10px;
+    width: 160px;
+}
+form input[type="submit"]
+{
+    width: 75px;
+    padding-left: 5px;
+    background-color: #F0E3E1;
+}
+#cajaIzquierda
+{
+    width: 280px;
+    padding: 3em 15px 0 20px;
+    font-family: Verdana;
+}
+#cajaDerecha
+{
+    background-color: #C9F;
+    width: 744px;
+    min-height: 300px;
+    padding: 1em 9px 1em 9px;
+}
+#cajaDerecha h1
+{
+    font-size: 1.4em;
+}
+#cajaDerecha h1 p
+{
+    text-align: justify;
+    padding-top: 1.2em;
+}
+footer
+{
+    background-color: #369;
+    color: #FFF;
+    padding: 2rem;
+
+}
+footer #derecha
+{
+    right: 20px;
+    bottom: 1rem;
+    position: fixed;
+}
+@media(max-width: 600px){
+    t
+}

@@ -1,0 +1,298 @@
+.contenedorVacio
+{
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+}
+#cajaEjemplo1
+{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+#cajaEjemplo2
+{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
+#cajaEjemplo3
+{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+#cajaEjemplo4
+{
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+}
+#cajaEjemplo5
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.contenedor{
+    display: flex;
+    width: 1000px;
+    border: 2px solid black;
+}
+#caja1
+{
+    width: 100px;
+    flex-grow: 2;
+    height: 100px;
+    background-color: lightgreen;
+}
+#caja2
+{
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+    background-color: coral;
+}
+#caja3
+{
+    width: 100px;
+    height: 100px;
+    flex-grow: 3;
+    background-color: lightblue;
+}
+#caja4
+{
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+    background-color: lightpink;
+}
+#caja5
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/* Ejercicio shrink*/
+
+#cajaEjemplo6
+{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+#cajaEjemplo7
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#cajaEjemplo8
+{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#cajaEjemplo9
+{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+#cajaEjemplo10
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+#caja6
+{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 2;
+    background-color: yellow;
+}
+#caja7
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#caja8
+{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#caja9
+{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 5;
+    background-color: orange;
+}
+#caja10
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+
+#contenedor2
+{
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+
+}
+#cajaEjemplo11
+{
+    height: 100px;
+    background-color: blueviolet;
+    width: 100px;
+}
+#cajaEjemplo12
+{
+    height: 100px;
+    background-color: cornflowerblue;
+    width: 100px;
+}
+#cajaEjemplo13
+{
+    height: 100px;
+    background-color: aquamarine;
+    width: 100px;
+}
+#cajaEjemplo14
+{
+    height: 100px;
+    background-color: yellowgreen;
+    width: 100px;
+}
+#cajaEjemplo15
+{
+    height: 100px;
+    background-color: indianred;
+    width: 100px;
+}
+#caja11
+{
+    height: 100px;
+    background-color: blueviolet;
+    justify-content: space-between;
+    width: 100px;
+    margin: 10px;
+}
+#caja12
+{
+    height: 100px;
+    background-color: cornflowerblue;
+    justify-content: space-between;
+    width: 100px;
+    margin: 10px;
+}
+#caja13
+{
+    height: 100px;
+    background-color: aquamarine;
+    justify-content: space-between;
+    width: 100px;
+    margin: 10px;
+}
+#caja14
+{
+    height: 100px;
+    background-color: yellowgreen;
+    justify-content: space-between;
+    width: 100px;
+    margin: 10px;
+}
+#caja15
+{
+    height: 100px;
+    background-color: indianred;
+    justify-content: space-between;
+    width: 100px;
+    margin: 10px;
+}
+#contenedor2-1
+{
+    display: flex;
+    flex-direction: column;
+    /*flex-direction: column-reverse;*/
+
+}
+
+#contenedor3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cajaEjemplo16
+{
+    height: 100px;
+    background-color: blanchedalmond;
+    width: 100px;
+}
+.cajaEjemplo17
+{
+    height: 100px;
+    background-color: goldenrod;
+    width: 100px;
+}
+.cajaEjemplo18
+{
+    height: 100px;
+    background-color: indigo;
+    width: 100px;
+}
+.cajaEjemplo19
+{
+    height: 100px;
+    background-color: darkseagreen;
+    width: 100px;
+}
+.cajaEjemplo20
+{
+    height: 100px;
+    background-color: skyblue;
+    width: 100px;
+}
+
+.caja16
+{
+    height: 100px;
+    background-color: blanchedalmond;
+    width: 100px;
+
+}
+.caja17
+{
+    height: 100px;
+    background-color: goldenrod;
+    width: 100px;
+}
+.caja18
+{
+    height: 100px;
+    background-color: indigo;
+    width: 100px;
+}
+.caja19
+{
+    height: 100px;
+    background-color: darkseagreen;
+    width: 100px;
+
+}
+.caja20
+{
+    height: 100px;
+    background-color: skyblue;
+    width: 100px;
+}
+
+#contenedor3-1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /*flex-wrap: wrap;*/
+}

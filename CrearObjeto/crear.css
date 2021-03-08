@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');	
+html{
+	width:100% !important;
+	font-size:16px;
+	
+}
+	
+body{
+	width:100% !important;
+	margin:0px !important;
+	margin-right:0px !important;
+	padding:0px !important;
+	font-family: 'Inter', sans-serif;
+}	
+
+
+h1, h2{
+	text-align:center;
+	color:#f28b0c;
+	font-weight:bold;
+	
+}	
+h2{
+	margin-bottom:6%;
+}	
+nav{
+	padding: 1% 0% 1% 3%;
+	background-color:#f9f9fa;
+	border-top: 2px solid #f4f4f6; 
+}
+nav a{
+	color:black !important;
+	padding:0 0 3% 0;
+	text-decoration: none;
+}
+nav a:hover{
+	border-bottom: 3px solid black;
+}	
+header{
+	padding:2% 2%; 
+	margin-bottom:20px;
+}
+.objetos{
+	margin:2.5% auto;
+	border:1px solid #0060df;
+	padding:5%;
+	margin-top:5%;
+	width:40%;
+}	
+
+#inicio{
+	border-radius:4px;
+	background-color:white;
+	border-color:#0060df;
+	color:#0060df;
+	min-width:35%;
+	height:50%;
+	min-height:25px;
+	margin:2.5% 5% 0% 30%;
+	font-weight:bold;
+}
+#boton{
+	background-color:white;
+	border-color:#0060df;
+	color:#0060df;
+	margin:10% 0% 0% 40%;
+}
+#boton:hover, #inicio:hover{
+	background-color:#0060df;
+	color:white;
+}
+.botones{
+
+	border-radius:4px;
+	background-color:white;
+	border-color:#0060df;
+	color:#0060df;
+	min-width:30%;
+	font-size:1em;
+	min-height:25px;
+	margin:15% 5% 0% 30%;
+	font-weight:bold;
+}
+button:hover{
+	background-color:#0060df;
+	color:white;
+}	
+
+img{
+	width:60%;
+}	
+
+
+#cookies
+{
+	opacity: 95%;
+	margin: 0 auto;
+	background-color: #0060df;
+	color:white;
+	position:fixed;
+	bottom:0;
+	right: 0;
+	left:0;
+	width:100%;
+	z-index:100;
+	min-height: 260px;
+	text-align: center;
+	padding:20px;
+}
+#cookies a{
+	color: #f28b0c;
+}
+#botonCookie{
+	width: auto;
+	opacity: 100%;
+	margin-top: 20px;
+	border-radius:4px;
+	background-color:white;
+	border-color:#0060df;
+	color:#0060df;
+	width:10%;
+	font-size:1em;
+	font-weight:bold;
+}
+#botonCookie:hover{
+	background-color:black;
+	color:white;
+}
+footer{
+	background-color: black;
+	color:white; 
+	text-align: center; 
+	width: 100%; 
+	bottom: 0px; 
+	margin-top: 2%;
+	font-size:0.5em;
+	position: fixed;
+}	
+input[type="text"]
+{
+	width:100%;
+}
+#wcag
+{
+	height: 50px;
+	width: 100px;
+	float: right;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+

@@ -1,0 +1,65 @@
+
+html
+{
+    width: 1024px
+}
+header
+{
+    background-color: #8aa7ec;
+    border: 2px solid black;
+    text-align: center;
+}
+#contenedor{
+    height: 400px;
+
+}
+#cajaVertical
+{
+    float: left;
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    background-color: sandybrown;
+    height: 400px;
+
+}
+#cajaSinUso
+{
+    float: left;
+    width: 674px;
+    height: 400px;
+    background-color: #acc8cc;
+}
+#cajaHorinzontal
+{
+    height: 100px;
+    background-color: skyblue;
+
+}
+ul{
+
+}
+li{
+    list-style-type: none;
+    display:inline-block ;
+}
+#boton1
+{
+    height: 100px;
+    width: 230px;
+}
+#boton2
+{
+    height: 100px;
+    width: 230px;
+}
+#boton3
+{
+    height: 100px;
+    width: 230px;
+}
+#boton4
+{
+    height: 100px;
+    width: 230px;
+}

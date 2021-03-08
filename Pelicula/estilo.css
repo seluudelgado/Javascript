@@ -1,0 +1,49 @@
+html{
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+body
+{
+    text-align: center;
+    background: url("imagenes/fondo.png");
+}
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    height: 800px;
+    margin-left: 350px;
+    width: 700px;
+    border: 2px solid;
+}
+form input
+{
+    margin-left: 10px;
+}
+label{
+    font-weight: bold;
+}
+#sinop
+{
+    height: 100px;
+    width: 300px;
+}
+input[type=button]
+{
+    border-radius: 10px;
+    margin-top: 100px;
+    border: 2px solid black;
+    height: 30px;
+    background: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+input[type=button]:hover
+{
+    background: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+#portada
+{
+    margin-left: 200px;
+    height: 200px;
+    width: 300px;
+}

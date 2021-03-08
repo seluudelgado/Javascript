@@ -1,0 +1,441 @@
+{
+  "id": "212fb5b1-dc34-4516-a3c3-23aa4ba863d0",
+  "version": "2.0",
+  "name": "CRUDo",
+  "url": "http://localhost/crudo/crudo.html",
+  "tests": [{
+    "id": "0443ec6e-2afb-435e-bf63-dd824da498c6",
+    "name": "Home",
+    "commands": [{
+      "id": "57eb6f45-a9f9-426d-ba41-98f1c0e7c497",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "http://localhost/crudo/crudo.html"
+    }, {
+      "id": "0724ece2-1015-4b82-bf6b-a3b370bce3fa",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//h1",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "0d4efc46-618e-40f3-8067-ef935f2d3a03",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "CRUDo",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "585bdf55-3855-4525-b02e-a9e98abe6494",
+    "name": "Listar",
+    "commands": [{
+      "id": "9bf4d00a-46f4-46a4-96aa-71818150c785",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/crudo/crudo.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66a0a6d0-f318-40e2-aaaf-9c0fa5c90df7",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Listar Objetos",
+      "targets": [
+        ["linkText=Listar Objetos", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Listar Objetos')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Listar Objetos')]", "xpath:innerText"]
+      ],
+      "value": "Listar Objetos"
+    }, {
+      "id": "fd28c774-f6cb-4414-91a0-c4e6a3530798",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar Objetos",
+      "targets": [
+        ["linkText=Listar", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Listar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Listar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6c083de-303a-4425-847c-f27698414933",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//span",
+      "targets": [],
+      "value": "numSpans"
+    }, {
+      "id": "fc5551a8-23fc-4939-84a1-ed63c46a3071",
+      "comment": "",
+      "command": "assert",
+      "target": "numSpans",
+      "targets": [],
+      "value": "20"
+    }]
+  }, {
+    "id": "969fba67-6ceb-45a5-8cb7-6244bf8771b5",
+    "name": "Crear",
+    "commands": [{
+      "id": "9507d57e-af97-4bf1-9e6b-48e0aaa7648c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/crudo/crudo.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "299e7389-ddcf-41a8-8fed-eb30f4eeeafc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Objeto",
+      "targets": [
+        ["linkText=Crear", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "011defd9-527a-4c1c-b576-4dba7334e2b5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[text()='Cancelar']",
+      "targets": [
+        ["css=button:nth-child(21)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98975d9f-4378-4d9b-b266-ee42e32e5fef",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[text()='Aceptar']",
+      "targets": [
+        ["css=button:nth-child(21)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ac821b-4cab-4917-8a85-b074fc3e358b",
+      "comment": "",
+      "command": "click",
+      "target": "id=entero",
+      "targets": [
+        ["id=entero", "id"],
+        ["css=#entero", "css:finder"],
+        ["xpath=//input[@id='entero']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea2e0019-9b9e-4bb0-9a80-ef5fafbb7f0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=entero",
+      "targets": [
+        ["id=entero", "id"],
+        ["css=#entero", "css:finder"],
+        ["xpath=//input[@id='entero']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "f9be1c29-3015-477d-a4e6-a5e124dce467",
+      "comment": "",
+      "command": "type",
+      "target": "id=real",
+      "targets": [
+        ["id=real", "id"],
+        ["css=#real", "css:finder"],
+        ["xpath=//input[@id='real']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.23"
+    }, {
+      "id": "d1b0d947-1688-4021-8465-7478697452e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=texto",
+      "targets": [
+        ["id=texto", "id"],
+        ["css=#texto", "css:finder"],
+        ["xpath=//input[@id='texto']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c94fd7a7-1f41-4eaa-811f-eb83d2ce3439",
+      "comment": "",
+      "command": "type",
+      "target": "id=texto",
+      "targets": [
+        ["id=texto", "id"],
+        ["css=#texto", "css:finder"],
+        ["xpath=//input[@id='texto']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "abcd"
+    }, {
+      "id": "7d1920f2-fcee-4bdb-b5ef-8c1563dd7f2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Verdadero",
+      "targets": [
+        ["id=Verdadero", "id"],
+        ["name=booleano", "name"],
+        ["css=#Verdadero", "css:finder"],
+        ["xpath=//input[@id='Verdadero']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc543e24-bc2b-4751-af53-7a61a6549af6",
+      "comment": "",
+      "command": "click",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069b574f-fbf9-417e-9019-85cd5befd6c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "2020-12-31"
+    }, {
+      "id": "03a129ec-9148-4c88-9097-8585c38daabe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Aceptar']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb21e524-bc5b-4e44-a3e6-3d0e8271f77b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[text()[contains(., 'clave:21')]]",
+      "targets": [
+        ["css=span:nth-child(101)", "css:finder"],
+        ["xpath=//span[21]", "xpath:position"],
+        ["xpath=//span[contains(.,'entero:1 real:1.23 texto:abcd booleano:true fecha:31/12/2020 objeto:null clave:21 ')]", "xpath:innerText"]
+      ],
+      "value": "2000"
+    }]
+  }, {
+    "id": "69666ffc-bc88-4a10-8ba7-8e910d730b2a",
+    "name": "BorrarBD",
+    "commands": [{
+      "id": "3d0ab2bc-f459-455a-b8f4-60c7f274032d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/crudo/crudo.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db29602f-40ee-456c-8fed-956ebfeca7be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Borrar BD",
+      "targets": [
+        ["linkText=Borrar BD", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Borrar BD')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Borrar BD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60345cd9-7822-4570-8ab0-d4fdddbf9854",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a7e5e9a6-e4fb-4d80-907c-16a5b6692de6",
+    "name": "Borrar",
+    "commands": [{
+      "id": "201c620c-5c7e-468b-8822-bc5f19e62b47",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/crudo/crudo.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30e0b48c-6da9-4db6-ba87-69540c0325b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar Objetos",
+      "targets": [
+        ["linkText=Listar Objetos", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Listar Objetos')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Listar Objetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e35121e1-bb26-4b70-af41-b58a4ea4ea89",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()=\"Borrar\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc697b45-0099-491f-980f-ca2c5890e5ec",
+      "comment": "",
+      "command": "//click",
+      "target": "css=a:nth-child(99)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7305119-38d9-463b-a1df-64e8dd8961a8",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//span",
+      "targets": [],
+      "value": "numSpans"
+    }, {
+      "id": "b0d536ae-3385-4e53-9b43-3774d9b81a97",
+      "comment": "",
+      "command": "assert",
+      "target": "numSpans",
+      "targets": [],
+      "value": "20"
+    }]
+  }, {
+    "id": "63b588de-1ef9-4eb5-bf39-9815c97110a9",
+    "name": "Editar",
+    "commands": [{
+      "id": "3e9a31c8-56f6-423c-a747-4371f2efe41a",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "http://localhost/crudo/crudo.html"
+    }, {
+      "id": "7e9a477a-1c56-4a4b-85d3-056c32c3b504",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()=\"Listar Objetos\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5e7442d-7108-4c9c-bfe1-b13165f69afe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()=\"Editar\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c0bf729-6bf2-4c34-9c59-839b4b600973",
+      "comment": "",
+      "command": "click",
+      "target": "id=texto",
+      "targets": [
+        ["id=texto", "id"],
+        ["css=#texto", "css:finder"],
+        ["xpath=//input[@id='texto']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a8d674d-f8e3-4d7d-b5c0-dad32745a1fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=texto",
+      "targets": [
+        ["id=texto", "id"],
+        ["css=#texto", "css:finder"],
+        ["xpath=//input[@id='texto']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Prueba 1"
+    }, {
+      "id": "703be706-2c7c-4bbe-b164-ec56c42c7c8c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()=\"Aceptar\"]",
+      "targets": [
+        ["css=button:nth-child(23)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Aceptar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9059f63-9c2b-4fd1-b304-c539be39604e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[text()[contains(., 'texto:Prueba 1')]]",
+      "targets": [],
+      "value": "3000"
+    }]
+  }, {
+    "id": "f4524b5d-30ce-4dfa-a1af-e0c8dea4d7b8",
+    "name": "Ver",
+    "commands": [{
+      "id": "9ef35cd1-426b-4d32-98ad-838f1eb750f1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/crudo/crudo.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d229e673-e347-485d-8083-a342af77ec54",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()=\"Listar Objetos\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ed2f772-babd-4c10-97f8-ac2f712720ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()=\"Ver\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05701c2b-6eae-466f-8ec9-e7d4d71a7890",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[text()[contains(., 'entero:')]]",
+      "targets": [],
+      "value": "3000"
+    }]
+  }],
+  "suites": [{
+    "id": "1fde95b5-7eef-4f00-acbe-2cd5387e25cc",
+    "name": "CRUDo TestSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0443ec6e-2afb-435e-bf63-dd824da498c6", "69666ffc-bc88-4a10-8ba7-8e910d730b2a", "585bdf55-3855-4525-b02e-a9e98abe6494", "969fba67-6ceb-45a5-8cb7-6244bf8771b5", "a7e5e9a6-e4fb-4d80-907c-16a5b6692de6", "63b588de-1ef9-4eb5-bf39-9815c97110a9", "f4524b5d-30ce-4dfa-a1af-e0c8dea4d7b8"]
+  }],
+  "urls": ["http://localhost/crudo/crudo.html"],
+  "plugins": []
+}

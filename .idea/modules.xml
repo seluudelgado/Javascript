@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/Angular/.idea/Angular.iml" filepath="D:/Angular/.idea/Angular.iml" />
+      <module fileurl="file://D:/xampp/htdocs/Codeigniter/.idea/Codeigniter.iml" filepath="D:/xampp/htdocs/Codeigniter/.idea/Codeigniter.iml" />
+      <module fileurl="file://D:/xampp/htdocs/Ejercicios/.idea/Ejercicios.iml" filepath="D:/xampp/htdocs/Ejercicios/.idea/Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Javascript.iml" filepath="$PROJECT_DIR$/.idea/Javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Typescript/.idea/Typescript.iml" filepath="$PROJECT_DIR$/../Typescript/.idea/Typescript.iml" />
+    </modules>
+  </component>
+</project>

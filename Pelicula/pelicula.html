@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+        <title> Catálogo Pelicula </title>
+        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="pelicula.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+
+</head>
+    <body>
+        <h1>Catálogo</h1>
+        <form>
+            <div>
+                <label>Sinopsis</label><br><br>
+                <textarea placeholder="Sinopsis..." id="sinop"></textarea><br><br><br><br><br><br>
+            </div>
+            <div>
+                <label>Titulo</label>
+                <input type="text" placeholder="Título..." id="titulo">
+                <label>Año</label>
+                <input type="text" placeholder="Año..." id="anyo"><br><br>
+            </div>
+            <div>
+                <label>Duracion</label>
+                <input type="text" placeholder="Duración..." id="duracion">
+                <label>Pais</label>
+                <input type="text" placeholder="País..." id="pais"><br><br>
+            </div>
+            <div>
+                <label>Director</label>
+                <input type="text" placeholder="Director..." id="director">
+                <label>Guion</label>
+                <input type="text" placeholder="Guión..." id="guion"><br><br>
+            </div>
+            <div>
+                <label>Productor</label>
+                <input type="text" placeholder="Productor..." id="productor">
+                <label>Género</label>
+                <input type="text" placeholder="Género..." id="genero"><br><br>
+            </div>
+            <div>
+                <label>Fecha adquisición</label>
+                <input type="text" placeholder="Fecha adquisición..." id="fecha">
+                <label>Código imdb</label>
+                <input type="text" placeholder="Código imdb..." id="imdb" ><br><br>
+            </div>
+            <div>
+                <label>Portada</label>
+                <div id="portada"></div>
+            </div>
+            <div>
+                <input type="button" class="botones" onclick="descargaArchivo()" value="Buscar pelicula"/>
+                <input type="button" class="botones" value="Guardar pelicula"/>
+            </div>
+        </form>
+    </body>
+</html>

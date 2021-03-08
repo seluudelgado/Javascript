@@ -1,0 +1,206 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="clases.js"></script>
+		<script src="crudo.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="crear.css">
+		<title>Listar</title>
+	
+</head>
+<body onload="comprobarCookie()">
+	
+
+<div class="container"></div>
+	<header>
+			<div class="row">
+				<div class="mx-auto col-md-4 col-sm-12">
+					<img class="mx-auto d-block" src="mozilla.jpg" >
+				</div>
+
+				<div class="col-md-4 col-sm-12">
+					<h1>Crear objeto</h1>
+				</div>
+				
+				<div class="mx-auto col-md-4 col-sm-12">
+					<a href="../registro/formulario.html"><button id="inicio">Registro</button></a>
+				</div>				
+			</div>	
+	</header>
+	<nav>
+		<div class="row">
+			<div class="col-auto" >
+					<a href="../CrearEditar/crear.html">Crear Objeto</a> 
+            </div>	
+            <div class="col-auto" >
+                <a href="../Listar/Listar.html">Listar Objetos</a> 
+            </div>	
+            <div class="col-auto" >
+                <a href="#">Borrar BD</a>
+            </div>	
+		</div>	
+	</nav>
+	<div class="row">
+				<div class="objetos">
+					<div class="row">
+						<div class="col-12">
+							<h1>Introduce datos</h1>
+						</div>
+					</div>
+					<form>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-12">
+									<label for="entero">Entero</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-10 col-sm-12">
+									<input type="text" id="entero" name="entero">
+									<br>
+									<br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 col-sm-12">
+									<label for="real">Real</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-10 col-sm-12">
+									<input type="text" id="real" name="texto">
+									<br>
+									<br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 col-sm-12">
+									<label for="texto">Texto</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-10 col-sm-12">
+									<input type="text" id="texto" name="texto">
+									<br>
+									<br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 col-sm-12">
+									<label>Booleano</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-3 col-sm-12">
+									<input type="radio"  name="booleano" value="true">True
+									<br>
+									<br>
+								</div>
+								<div class="col-md-3 col-sm-12">
+									<input type="radio"  name="booleano" value="false">False
+									<br>
+									<br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 col-sm-12">
+									<label for="fecha">Fecha</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-10 col-sm-12">
+									<input type="text" id="fecha" name="fecha">
+									<br>
+									<br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 col-sm-12">
+									<label for="objeto">Objeto</label>
+									<br>
+									<br>
+								</div>
+								<div class="col-md-10 col-sm-12">
+									<input type="text" id="objeto" name="objeto">
+									<br>
+									<br>
+								</div>
+							</div>
+						
+						<br>
+						<div class="row">
+							<div class="col-sm-12 col-xs-12">
+								<button id="boton">Aceptar</button>
+							</div>
+						</div>	
+					</form>
+				</div>
+				<div id="cookies" class="row">
+
+					En Mozilla nos preocupamos por su privacidad
+					Nosotros y nuestros socios utilizamos cookies e identificadores para almacenar y acceder a información en tu
+					dispositivo y recabar datos personales sobre la audiencia, desarrollar y mejorar productos así como servir y medir
+					anuncios y/o contenido personalizados basándonos en tu navegación (por ejemplo páginas visitadas). Con tu permiso,
+					podemos utilizar datos de localización geográfica precisa e identificación mediante las características del
+					dispositivo. Algunas compañías requieren de tu consentimiento y otras se basan en el interés legítimo, pero
+					podrás oponerte a dicho tratamiento. Además de los propósitos anteriores, pedimos tu consentimiento para compartir
+					los perfiles obtenidos a partir de tu navegación entre las empresas del Grupo Mozilla para mostrarte publicidad
+					personalizada. Puedes aceptar o rechazar/configurar el uso de cookies para esta web o aplicación en el botón
+					correspondiente. Podrás modificar tu elección en Configuración de privacidad / Cookies. Más info
+					<a href="../privacidad/cookies.html">Política de Cookies</a>
+					<br>
+					<button id="botonCookie" onclick="crearCookie()">Permitir</button>
+
+				</div>
+		
+			<footer>
+				<div>
+					Visita la empresa matriz sin ánimo de lucro de la Mozilla Corporation, la Mozilla Foundation.
+				</div>
+				<div>
+					Algunos contenidos están protegidos por los derechos de autor ©2019–2021 de determinados colaboradores en mozilla.org. El resto de contenidos está disponible bajo una licencia 
+					Creative Commons.
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<a href="../privacidad/lopd.html">LOPD</a>
+					</div>
+					<div class="col-3">
+						<a href="../privacidad/cookies.html">Cookies</a>
+					</div>
+					<div class="col-3">
+						<a href="../privacidad/propIntelectual.html">Propiedad Intelectual</a>
+					</div>
+					<div class="col-3">
+						<a href="../privacidad/lssice.html">LSSICE</a>
+					</div>
+					<a href="https://www.w3.org/WAI/WCAG2AAA-Conformance" title="Explanation of WCAG 2 Level AAA conformance" target="_blank">
+						<img id="wcag"
+							 src="https://www.w3.org/WAI/wcag2AAA"
+							 alt="Level AAA conformance,
+                 			W3C WAI Web Content Accessibility Guidelines 2.0">
+					</a>
+				</div>
+			</footer>
+        </div>
+    </body>
+</html>
+<script>
+	function crearCookie(){
+		document.cookie = "cookie1=cookie creada; expires=FRI, 31 DEC 2021 00:00:00 UTC ;";
+		document.getElementById("cookies").style.display='none';
+	}
+
+	function comprobarCookie(){
+		var cookie=document.cookie;
+
+		if(cookie!=''){
+			document.getElementById("cookies").style.display='none';
+		}
+		else
+		{
+			document.getElementById("cookies").style.display='block';
+		}
+	}
+</script>
